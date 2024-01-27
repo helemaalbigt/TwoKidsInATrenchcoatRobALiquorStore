@@ -7,18 +7,21 @@ public class KidsRigManager : MonoBehaviour
 {
 
     public Transform TopKidHandTarget_R, TopKidHandTarget_L, BottomKidHandTarget_R, BottomKidHandTarget_L;
-    public Transform BottomKidHeadBone;
     public FastIKFabric TopKidHandIK_R, TopKidHandIK_L, BottomKidHandIK_R, BottomKidHandIK_L;
 
 	public Vector3 HandOffset_R, HandOffset_L, HandRotOffset_R, HandRotOffset_L;
 
+	public Transform BottomKidHeadBone, TopKidHeadBone;
+
 
 	private Animator animator;
 	private BottomHandController bottomHandController;
+	private AutoHeadRecenter autoHeadRecenter;
 
 	// Start is called before the first frame update
 	void Start()
 	{
+
 		SetupHand(TopKidHandTarget_R,TopKidHandIK_R, HandOffset_R, HandRotOffset_R);
 		SetupHand(TopKidHandTarget_L,TopKidHandIK_L, HandOffset_L, HandRotOffset_L);
 
@@ -28,11 +31,13 @@ public class KidsRigManager : MonoBehaviour
 		animator = GetComponent<Animator>();
 
 		bottomHandController = FindObjectOfType<BottomHandController>();
+		autoHeadRecenter = FindObjectOfType<AutoHeadRecenter>();
 	}
 
 	private void Update()
 	{
 		BottomKidHeadBone.rotation = bottomHandController.camera.transform.rotation;
+		TopKidHeadBone.rotation = autoHeadRecenter.head.rotation;
 	}
 
 	private void SetupHand(Transform TopKidHandTarget, FastIKFabric TopKidHandIK, Vector3 HandOffset, Vector3 HandRotOffset)
