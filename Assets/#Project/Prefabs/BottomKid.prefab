@@ -399,9 +399,15 @@ MonoBehaviour:
   m_moveHandPosition: 0
   m_gripTransform: {fileID: 8321230493421764442}
   m_grabVolumes: []
-  m_controller: -2147483648
+  m_controller: 0
   m_parentTransform: {fileID: 0}
   m_player: {fileID: 0}
+  OnGrabStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGrabEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4191899649450168461
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,6 +949,9 @@ MonoBehaviour:
   hittableHandLayers:
     serializedVersion: 2
     m_Bits: 320
+  hittableHandLayersNoInteractive:
+    serializedVersion: 2
+    m_Bits: 0
   snappableLayers:
     serializedVersion: 2
     m_Bits: 1024

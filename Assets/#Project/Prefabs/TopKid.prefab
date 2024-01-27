@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 8224814268487522649}
   - component: {fileID: 3819607091776049717}
   - component: {fileID: 9179112877580178851}
-  - component: {fileID: 6441313062424753363}
+  - component: {fileID: 964184474648726222}
   m_Layer: 0
   m_Name: GrabSphere
   m_TagString: Untagged
@@ -423,7 +423,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6441313062424753363
+--- !u!114 &964184474648726222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -432,18 +432,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 3968274921952541016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd425c2d06f39bf4899d07c05d0f10eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ec495152704e654eb38e3f20d208bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   grabBegin: 0.55
   grabEnd: 0.35
   m_parentHeldObject: 0
   m_moveHandPosition: 0
-  m_gripTransform: {fileID: 5199960971746777910}
+  m_gripTransform: {fileID: 0}
   m_grabVolumes: []
   m_controller: 1
-  m_parentTransform: {fileID: 0}
+  m_parentTransform: {fileID: 5199960971746777910}
   m_player: {fileID: 0}
+  OnGrabStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGrabEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7046823078892163488
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +463,7 @@ GameObject:
   - component: {fileID: 5827071583337982666}
   - component: {fileID: 8728760542592150505}
   - component: {fileID: 5877510550751643702}
-  - component: {fileID: 5935516521112876323}
+  - component: {fileID: 8262313846456792680}
   m_Layer: 0
   m_Name: GrabSphere
   m_TagString: Untagged
@@ -578,7 +584,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5935516521112876323
+--- !u!114 &8262313846456792680
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,18 +593,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 7046823078892163488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd425c2d06f39bf4899d07c05d0f10eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ec495152704e654eb38e3f20d208bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   grabBegin: 0.55
   grabEnd: 0.35
   m_parentHeldObject: 0
   m_moveHandPosition: 0
-  m_gripTransform: {fileID: 7180226620676122834}
+  m_gripTransform: {fileID: 0}
   m_grabVolumes: []
   m_controller: 2
-  m_parentTransform: {fileID: 0}
+  m_parentTransform: {fileID: 7180226620676122834}
   m_player: {fileID: 0}
+  OnGrabStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGrabEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8115586460081001721
 GameObject:
   m_ObjectHideFlags: 0

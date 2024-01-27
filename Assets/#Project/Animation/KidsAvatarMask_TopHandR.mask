@@ -1,0 +1,351 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: KidsAvatarMask_TopHandR
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature.001
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone.neck
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone.neck/BottomKid_Bone.head
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone.neck/BottomKid_Bone.head/BottomKid_Bone.head_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.011
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.011/BottomKid_Bone_L.012
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.011/BottomKid_Bone_L.012/BottomKid_Bone_L.017
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.011/BottomKid_Bone_L.012/BottomKid_Bone_L.017/BottomKid_Bone_L.016
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.011/BottomKid_Bone_L.012/BottomKid_Bone_L.017/BottomKid_Bone_L.016/BottomKid_Bone_L.016_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.013
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.013/BottomKid_Bone_L.014
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.013/BottomKid_Bone_L.014/BottomKid_Bone_L.019
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.013/BottomKid_Bone_L.014/BottomKid_Bone_L.019/BottomKid_Bone_L.018
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.013/BottomKid_Bone_L.014/BottomKid_Bone_L.019/BottomKid_Bone_L.018/BottomKid_Bone_L.018_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.015
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.015/BottomKid_Bone_L.020
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.015/BottomKid_Bone_L.020/BottomKid_Bone_L.021
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.015/BottomKid_Bone_L.020/BottomKid_Bone_L.021/BottomKid_Bone_L.022
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.015/BottomKid_Bone_L.020/BottomKid_Bone_L.021/BottomKid_Bone_L.022/BottomKid_Bone_L.022_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.023
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.023/BottomKid_Bone_L.024
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.023/BottomKid_Bone_L.024/BottomKid_Bone_L.025
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.023/BottomKid_Bone_L.024/BottomKid_Bone_L.025/BottomKid_Bone_L.026
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.023/BottomKid_Bone_L.024/BottomKid_Bone_L.025/BottomKid_Bone_L.026/BottomKid_Bone_L.026_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.028
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.028/BottomKid_Bone_L.029
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.028/BottomKid_Bone_L.029/BottomKid_Bone_L.030
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.028/BottomKid_Bone_L.029/BottomKid_Bone_L.030/BottomKid_Bone_L.031
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_L/BottomKid_Bone.arm.L/BottomKid_Bone.elbow.L/BottomKid_WristBone_L/BottomKid_Bone_L.028/BottomKid_Bone_L.029/BottomKid_Bone_L.030/BottomKid_Bone_L.031/BottomKid_Bone_L.031_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.011
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.011/BottomKid_Bone_R.012
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.011/BottomKid_Bone_R.012/BottomKid_Bone_R.017
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.011/BottomKid_Bone_R.012/BottomKid_Bone_R.017/BottomKid_Bone_R.016
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.011/BottomKid_Bone_R.012/BottomKid_Bone_R.017/BottomKid_Bone_R.016/BottomKid_Bone_R.016_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.013
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.013/BottomKid_Bone_R.014
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.013/BottomKid_Bone_R.014/BottomKid_Bone_R.019
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.013/BottomKid_Bone_R.014/BottomKid_Bone_R.019/BottomKid_Bone_R.018
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.013/BottomKid_Bone_R.014/BottomKid_Bone_R.019/BottomKid_Bone_R.018/BottomKid_Bone_R.018_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.015
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.015/BottomKid_Bone_R.020
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.015/BottomKid_Bone_R.020/BottomKid_Bone_R.021
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.015/BottomKid_Bone_R.020/BottomKid_Bone_R.021/BottomKid_Bone_R.022
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.015/BottomKid_Bone_R.020/BottomKid_Bone_R.021/BottomKid_Bone_R.022/BottomKid_Bone_R.022_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.023
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.023/BottomKid_Bone_R.024
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.023/BottomKid_Bone_R.024/BottomKid_Bone_R.025
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.023/BottomKid_Bone_R.024/BottomKid_Bone_R.025/BottomKid_Bone_R.026
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.023/BottomKid_Bone_R.024/BottomKid_Bone_R.025/BottomKid_Bone_R.026/BottomKid_Bone_R.026_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.028
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.028/BottomKid_Bone_R.029
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.028/BottomKid_Bone_R.029/BottomKid_Bone_R.030
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.028/BottomKid_Bone_R.029/BottomKid_Bone_R.030/BottomKid_Bone_R.031
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.chest.001/BottomKid_Bone_R/BottomKid_Bone.arm.R/BottomKid_Bone.elbow.R/BottomKid_WristBone_R/BottomKid_Bone_R.028/BottomKid_Bone_R.029/BottomKid_Bone_R.030/BottomKid_Bone_R.031/BottomKid_Bone_R.031_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.spine
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.spine/BottomKid_Bone.chest
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone.spine/BottomKid_Bone.chest/BottomKid_Bone.chest_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_L.003
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_L.003/BottomKid_Bone_L.004
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_L.003/BottomKid_Bone_L.004/BottomKid_Bone_L.005
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_L.003/BottomKid_Bone_L.004/BottomKid_Bone_L.005/BottomKid_Bone_L.005_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_L.006
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_L.006/BottomKid_Bone_L.006_end
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_R.003
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_R.003/BottomKid_Bone_R.004
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_R.003/BottomKid_Bone_R.004/BottomKid_Bone_R.005
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_R.003/BottomKid_Bone_R.004/BottomKid_Bone_R.005/BottomKid_Bone_R.010
+    m_Weight: 0
+  - m_Path: Armature.001/BottomKid_Bone_R.003/BottomKid_Bone_R.004/BottomKid_Bone_R.005/BottomKid_Bone_R.010/BottomKid_Bone_R.010_end
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_Bone
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_Bone/Coat_Bone_L.001
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_Bone/Coat_Bone_L.001/Coat_Bone_L.001_end
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_Bone/Coat_Bone_L.002
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_Bone/Coat_Bone_L.002/Coat_Bone_L.002_end
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_Bone/Coat_Bone_R.001
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_Bone/Coat_Bone_R.001/Coat_Bone_R.001_end
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_Bone/Coat_Bone_R.002
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_Bone/Coat_Bone_R.002/Coat_Bone_R.002_end
+    m_Weight: 0
+  - m_Path: Armature.001/Coat_collider
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone.chest.001
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone.chest.001/TopKid_Bone.chest.001_end
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone.neck
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone.neck/TopKid_Bone.head
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone.neck/TopKid_Bone.head/TopKid_Bone.head_end
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.011
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.011/TopKid_Bone_L.012
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.011/TopKid_Bone_L.012/TopKid_Bone_L.017
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.011/TopKid_Bone_L.012/TopKid_Bone_L.017/TopKid_Bone_L.016
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.011/TopKid_Bone_L.012/TopKid_Bone_L.017/TopKid_Bone_L.016/TopKid_Bone_L.016_end
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.013
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.013/TopKid_Bone_L.014
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.013/TopKid_Bone_L.014/TopKid_Bone_L.019
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.013/TopKid_Bone_L.014/TopKid_Bone_L.019/TopKid_Bone_L.018
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.013/TopKid_Bone_L.014/TopKid_Bone_L.019/TopKid_Bone_L.018/TopKid_Bone_L.018_end
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.015
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.015/TopKid_Bone_L.020
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.015/TopKid_Bone_L.020/TopKid_Bone_L.021
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.015/TopKid_Bone_L.020/TopKid_Bone_L.021/TopKid_Bone_L.022
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.015/TopKid_Bone_L.020/TopKid_Bone_L.021/TopKid_Bone_L.022/TopKid_Bone_L.022_end
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.023
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.023/TopKid_Bone_L.024
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.023/TopKid_Bone_L.024/TopKid_Bone_L.025
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.023/TopKid_Bone_L.024/TopKid_Bone_L.025/TopKid_Bone_L.026
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.023/TopKid_Bone_L.024/TopKid_Bone_L.025/TopKid_Bone_L.026/TopKid_Bone_L.026_end
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.028
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.028/TopKid_Bone_L.029
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.028/TopKid_Bone_L.029/TopKid_Bone_L.030
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.028/TopKid_Bone_L.029/TopKid_Bone_L.030/TopKid_Bone_L.031
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_L/TopKid_Bone.arm.L/TopKid_Bone.elbow.L/TopKid_Bone.wrist.L/TopKid_Bone_L.028/TopKid_Bone_L.029/TopKid_Bone_L.030/TopKid_Bone_L.031/TopKid_Bone_L.031_end
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.011
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.011/TopKid_Bone_R.012
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.011/TopKid_Bone_R.012/TopKid_Bone_R.017
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.011/TopKid_Bone_R.012/TopKid_Bone_R.017/TopKid_Bone_R.016
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.011/TopKid_Bone_R.012/TopKid_Bone_R.017/TopKid_Bone_R.016/TopKid_Bone_R.016_end
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.013
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.013/TopKid_Bone_R.014
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.013/TopKid_Bone_R.014/TopKid_Bone_R.019
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.013/TopKid_Bone_R.014/TopKid_Bone_R.019/TopKid_Bone_R.018
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.013/TopKid_Bone_R.014/TopKid_Bone_R.019/TopKid_Bone_R.018/TopKid_Bone_R.018_end
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.015
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.015/TopKid_Bone_R.020
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.015/TopKid_Bone_R.020/TopKid_Bone_R.021
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.015/TopKid_Bone_R.020/TopKid_Bone_R.021/TopKid_Bone_R.022
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.015/TopKid_Bone_R.020/TopKid_Bone_R.021/TopKid_Bone_R.022/TopKid_Bone_R.022_end
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.023
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.023/TopKid_Bone_R.024
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.023/TopKid_Bone_R.024/TopKid_Bone_R.025
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.023/TopKid_Bone_R.024/TopKid_Bone_R.025/TopKid_Bone_R.026
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.023/TopKid_Bone_R.024/TopKid_Bone_R.025/TopKid_Bone_R.026/TopKid_Bone_R.026_end
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.028
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.028/TopKid_Bone_R.029
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.028/TopKid_Bone_R.029/TopKid_Bone_R.030
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.028/TopKid_Bone_R.029/TopKid_Bone_R.030/TopKid_Bone_R.031
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone.head.001/TopKid_Bone.chest/TopKid_Bone_R/TopKid_Bone.arm.R/TopKid_Bone.elbow.R/TopKid_Bone.wrist.R/TopKid_Bone_R.028/TopKid_Bone_R.029/TopKid_Bone_R.030/TopKid_Bone_R.031/TopKid_Bone_R.031_end
+    m_Weight: 1
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_L.003
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_L.003/TopKid_Bone_L.004
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_L.003/TopKid_Bone_L.004/TopKid_Bone_L.005
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_L.003/TopKid_Bone_L.004/TopKid_Bone_L.005/TopKid_Bone_L.006
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_L.003/TopKid_Bone_L.004/TopKid_Bone_L.005/TopKid_Bone_L.006/TopKid_Bone_L.006_end
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_R.003
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_R.003/TopKid_Bone_R.004
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_R.003/TopKid_Bone_R.004/TopKid_Bone_R.005
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_R.003/TopKid_Bone_R.004/TopKid_Bone_R.005/TopKid_Bone_R.006
+    m_Weight: 0
+  - m_Path: Armature.001/TopKid_Bone_hips/TopKid_Bone_R.003/TopKid_Bone_R.004/TopKid_Bone_R.005/TopKid_Bone_R.006/TopKid_Bone_R.006_end
+    m_Weight: 0
+  - m_Path: Coat
+    m_Weight: 1
+  - m_Path: Kids
+    m_Weight: 1
+  - m_Path: pocket_bottom_L
+    m_Weight: 1
+  - m_Path: pocket_bottom_R
+    m_Weight: 1
+  - m_Path: pocket_top_L
+    m_Weight: 1
+  - m_Path: pocket_top_R
+    m_Weight: 1
