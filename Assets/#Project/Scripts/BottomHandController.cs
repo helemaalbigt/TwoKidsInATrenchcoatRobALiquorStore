@@ -85,6 +85,8 @@ public class BottomHandController : MonoBehaviour
             }
             var anchorCol = _snapAnchor.GetComponent<Collider>();
             anchorCol.enabled = false;
+            
+            Destroy(_grabbedObject.GetComponentInChildren<OVRGrabbable>());
         } else {
             _grabbedObjectRb.useGravity = true;
         }

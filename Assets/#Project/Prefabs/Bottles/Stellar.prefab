@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 815463699401336514}
   - component: {fileID: 5235601374046464454}
   m_Layer: 6
-  m_Name: BottlePlaceholder
+  m_Name: Stellar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e18581fcfecf90340bf21fdf19fb8e4b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9004b6dba410dee419c882c3f46ec87a, type: 2}
     - target: {fileID: 919132149155446097, guid: e18581fcfecf90340bf21fdf19fb8e4b, type: 3}
       propertyPath: m_Name
       value: stella_beer
