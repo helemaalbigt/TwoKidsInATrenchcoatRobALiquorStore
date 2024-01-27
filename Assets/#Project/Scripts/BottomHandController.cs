@@ -71,14 +71,18 @@ public class BottomHandController : MonoBehaviour
 
     private void HandleReleaseObject() {
         if (_snapAnchor != null) {
-            _grabbedObject.position = _snapAnchor.position;
-            _grabbedObject.rotation = _snapAnchor.rotation;
+            _grabbedObject.SetParent(_snapAnchor);
+            _grabbedObject.localPosition = Vector3.zero;
+            _grabbedObject.localRotation = Quaternion.identity;
             _grabbedObjectRb.isKinematic = true;
             _grabbedObjectRb.velocity = _grabbedObjectRb.angularVelocity = Vector3.zero;
+            
             var colls = _grabbedObject.GetComponentsInChildren<Collider>();
             foreach (var coll in colls) {
                 coll.enabled = false;
             }
+            var anchorCol = _snapAnchor.GetComponent<Collider>();
+            anchorCol.enabled = false;
         } else {
             _grabbedObjectRb.useGravity = true;
         }
