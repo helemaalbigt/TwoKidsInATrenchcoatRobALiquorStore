@@ -9,22 +9,17 @@ public class BottomKidLocomotion : MonoBehaviour {
     public float lookSensitivity = 10f;
     public float maxYAngle = 80f;
     public float maxXAngle = 80f;
-    public LayerMask hittableHandLayers;
-    
+
     [Space(15)]
     public Rigidbody rigidBody;
     public Transform head;
-    public Camera camera;
-    public Transform hand;
-    public MouseGrabber grabber;
-    
+
     private Vector3 _targetHandPos;
     private Vector2 _currentRotation;
     
     void FixedUpdate() {
         Move();
         Look();
-        PositionHand();
     }
 
     private void Move() {
@@ -58,18 +53,5 @@ public class BottomKidLocomotion : MonoBehaviour {
         _currentRotation.y = Mathf.Clamp(_currentRotation.y, -maxYAngle, maxYAngle);
         
         head.localRotation = Quaternion.Euler(_currentRotation.y,_currentRotation.x,0);
-    }
-
-    private void PositionHand() {
-        var ray = camera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit, 2f, hittableHandLayers)) {
-            if (grabber.grabbedObject != null) {
-                _targetHandPos = hit.point - ray.direction.normalized * 0.04f;
-            } else {
-                _targetHandPos = hit.point;
-            }
-        }
-
-        hand.position = Vector3.Slerp(hand.position, _targetHandPos, Time.unscaledDeltaTime * 8f);
     }
 }
