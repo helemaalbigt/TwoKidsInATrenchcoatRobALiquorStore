@@ -9,10 +9,13 @@ public class BottomKidLocomotion : MonoBehaviour {
     public float lookSensitivity = 10f;
     public float maxYAngle = 80f;
     public float maxXAngle = 80f;
+    public LayerMask hittableHandLayers;
     
     [Space(15)]
     public Rigidbody rigidBody;
     public Transform head;
+    public Camera camera;
+    public Transform hand;
 
     private bool _prevPosSet;
     private Vector3 _prevPos;
@@ -22,6 +25,7 @@ public class BottomKidLocomotion : MonoBehaviour {
     void FixedUpdate() {
         Move();
         Look();
+        PositionHand();
     }
 
     private void Move() {
@@ -51,10 +55,16 @@ public class BottomKidLocomotion : MonoBehaviour {
     private void Look() {
         currentRotation.x += Input.GetAxis("Mouse X") * lookSensitivity;
         currentRotation.y -= Input.GetAxis("Mouse Y") * lookSensitivity;
-        //currentRotation.x = Mathf.Repeat(currentRotation.x, 360);
         currentRotation.x = Mathf.Clamp(currentRotation.x, -maxXAngle, maxXAngle);
         currentRotation.y = Mathf.Clamp(currentRotation.y, -maxYAngle, maxYAngle);
         
         head.localRotation = Quaternion.Euler(currentRotation.y,currentRotation.x,0);
+    }
+
+    private void PositionHand() {
+        var ray = camera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit, 2f, hittableHandLayers)) {
+            hand.position = hit.point;
+        }
     }
 }
