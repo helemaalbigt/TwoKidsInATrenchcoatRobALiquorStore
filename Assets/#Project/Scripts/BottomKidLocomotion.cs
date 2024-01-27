@@ -1,9 +1,14 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class BottomKidLocomotion : MonoBehaviour {
     public float speed;
     public float rotationSpeed;
+        
+    public float lookSensitivity = 10f;
+    public float maxYAngle = 80f;
+    public float maxXAngle = 80f;
     
     [Space(15)]
     public Rigidbody rigidBody;
@@ -11,9 +16,12 @@ public class BottomKidLocomotion : MonoBehaviour {
 
     private bool _prevPosSet;
     private Vector3 _prevPos;
+
+    private Vector2 currentRotation;
     
     void FixedUpdate() {
         Move();
+        Look();
     }
 
     private void Move() {
@@ -38,5 +46,15 @@ public class BottomKidLocomotion : MonoBehaviour {
 
         rigidBody.velocity = movement;
         rigidBody.angularVelocity = angularVel;
+    }
+
+    private void Look() {
+        currentRotation.x += Input.GetAxis("Mouse X") * lookSensitivity;
+        currentRotation.y -= Input.GetAxis("Mouse Y") * lookSensitivity;
+        //currentRotation.x = Mathf.Repeat(currentRotation.x, 360);
+        currentRotation.x = Mathf.Clamp(currentRotation.x, -maxXAngle, maxXAngle);
+        currentRotation.y = Mathf.Clamp(currentRotation.y, -maxYAngle, maxYAngle);
+        
+        head.localRotation = Quaternion.Euler(currentRotation.y,currentRotation.x,0);
     }
 }
