@@ -1109,6 +1109,14 @@ PrefabInstance:
       propertyPath: OnGrabStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 268271752}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabEnded.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTopKidHandPose_L
+      objectReference: {fileID: 0}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabStarted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTopKidHandPose_L
+      objectReference: {fileID: 0}
     - target: {fileID: 1637791447961727811, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
       propertyPath: m_Name
       value: TopKid
@@ -1161,6 +1169,14 @@ PrefabInstance:
       propertyPath: OnGrabStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 268271752}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabEnded.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTopKidHandPose_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabStarted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTopKidHandPose_R
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

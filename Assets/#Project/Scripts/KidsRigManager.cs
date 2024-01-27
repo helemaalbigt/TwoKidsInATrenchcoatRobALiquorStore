@@ -24,7 +24,6 @@ public class KidsRigManager : MonoBehaviour
 
 		SetupHand(TopKidHandTarget_R,TopKidHandIK_R, HandOffset_R, HandRotOffset_R);
 		SetupHand(TopKidHandTarget_L,TopKidHandIK_L, HandOffset_L, HandRotOffset_L);
-
 		BottomKidHandIK_L.Target = BottomKidHandTarget_L;
 		BottomKidHandIK_R.Target = BottomKidHandTarget_R;
 
@@ -34,7 +33,7 @@ public class KidsRigManager : MonoBehaviour
 		autoHeadRecenter = FindObjectOfType<AutoHeadRecenter>();
 	}
 
-	private void Update()
+	private void LateUpdate()
 	{
 		BottomKidHeadBone.rotation = bottomHandController.camera.transform.rotation;
 		TopKidHeadBone.rotation = autoHeadRecenter.head.rotation;
