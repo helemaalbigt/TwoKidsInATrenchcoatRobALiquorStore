@@ -8,16 +8,20 @@ public class StolenBottleManager {
    public static StolenBottleManager I
    {
       get {
-         if (I == null) {
+         if (_I == null) {
             _I = new StolenBottleManager();
          }
-         return I;
+         return _I;
       }
    }
    
    private List<Bottle> _stolenBottles;
 
    public void AddBottle(Bottle bottle) {
+      if (_stolenBottles == null) {
+         _stolenBottles = new List<Bottle>();
+      }
+      
       _stolenBottles.Add(bottle);
 
       if (_stolenBottles.Count >= 4) {
