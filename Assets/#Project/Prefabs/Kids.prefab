@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kids
       objectReference: {fileID: 0}
+    - target: {fileID: 2528899393311088510, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3815594533286374511, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
