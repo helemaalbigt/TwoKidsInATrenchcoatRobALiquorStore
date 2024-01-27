@@ -6,7 +6,4 @@ public class Bottle : MonoBehaviour {
     public OVRGrabbable grabbable;
     public Collider collider;
     
-    void Update() {
-        collider.enabled = !grabbable.isGrabbed;
-    }
 }

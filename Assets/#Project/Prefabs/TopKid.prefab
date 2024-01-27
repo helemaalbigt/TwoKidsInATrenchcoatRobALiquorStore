@@ -111,7 +111,7 @@ MonoBehaviour:
   cameraRig: {fileID: 2734190759111928841}
   head: {fileID: 2734190759111928847}
   headTarget: {fileID: 6073455537293758346}
-  maxDistFromCenter: 0.15
+  maxDistFromCenter: 0.4
 --- !u!1 &1754083775366607049
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +254,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3012443537796298815}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 8224814268487522649}
   - component: {fileID: 3819607091776049717}
   - component: {fileID: 9179112877580178851}
-  - component: {fileID: 5699632805181850746}
+  - component: {fileID: 6441313062424753363}
   m_Layer: 0
   m_Name: GrabSphere
   m_TagString: Untagged
@@ -423,7 +423,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5699632805181850746
+--- !u!114 &6441313062424753363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,7 +439,7 @@ MonoBehaviour:
   grabEnd: 0.35
   m_parentHeldObject: 0
   m_moveHandPosition: 0
-  m_gripTransform: {fileID: 2737663780398607565}
+  m_gripTransform: {fileID: 5199960971746777910}
   m_grabVolumes: []
   m_controller: 1
   m_parentTransform: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 5827071583337982666}
   - component: {fileID: 8728760542592150505}
   - component: {fileID: 5877510550751643702}
-  - component: {fileID: 8227939723047176154}
+  - component: {fileID: 5935516521112876323}
   m_Layer: 0
   m_Name: GrabSphere
   m_TagString: Untagged
@@ -578,7 +578,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8227939723047176154
+--- !u!114 &5935516521112876323
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -594,7 +594,7 @@ MonoBehaviour:
   grabEnd: 0.35
   m_parentHeldObject: 0
   m_moveHandPosition: 0
-  m_gripTransform: {fileID: 2737663780398607565}
+  m_gripTransform: {fileID: 7180226620676122834}
   m_grabVolumes: []
   m_controller: 2
   m_parentTransform: {fileID: 0}
@@ -739,10 +739,5 @@ Transform:
 --- !u!4 &2734190759111928847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
-  m_PrefabInstance: {fileID: 2734190759111800461}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2737663780398607565 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4484591312116288, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
   m_PrefabInstance: {fileID: 2734190759111800461}
   m_PrefabAsset: {fileID: 0}

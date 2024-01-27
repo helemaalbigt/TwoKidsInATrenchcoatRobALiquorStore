@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class MouseGrabber : OVRGrabber
 {
-    void Update()
+    public override void Update()
     {
+        base.Update();
+        
         if (Input.GetMouseButtonDown(0)) {
             GrabBegin();
         }
