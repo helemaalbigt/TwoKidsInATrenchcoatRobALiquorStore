@@ -94,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabbable: {fileID: 5883253722759552684}
   collider: {fileID: 5235601374046464454}
+  price: 1.99
 --- !u!65 &5235601374046464454
 BoxCollider:
   m_ObjectHideFlags: 0

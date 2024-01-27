@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5972122526381987088, guid: bceb63df64dcf6c44941b90f3035e99b, type: 3}
+      propertyPath: price
+      value: 49.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972122526381987088, guid: bceb63df64dcf6c44941b90f3035e99b, type: 3}
+      propertyPath: bottleName
+      value: Fancy Champagne
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3752171605901159182, guid: bceb63df64dcf6c44941b90f3035e99b, type: 3}

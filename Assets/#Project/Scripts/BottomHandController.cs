@@ -79,14 +79,15 @@ public class BottomHandController : MonoBehaviour
             _grabbedObjectRb.isKinematic = true;
             _grabbedObjectRb.velocity = _grabbedObjectRb.angularVelocity = Vector3.zero;
             
-            var colls = _grabbedObject.GetComponentsInChildren<Collider>();
-            foreach (var coll in colls) {
-                coll.enabled = false;
-            }
+            var bottle = _grabbedObject.GetComponentInChildren<Bottle>();
+            bottle.collider.enabled = false;
+            
             var anchorCol = _snapAnchor.GetComponent<Collider>();
             anchorCol.enabled = false;
             
-            Destroy(_grabbedObject.GetComponentInChildren<OVRGrabbable>());
+            Destroy(bottle.grabbable);
+            
+            StolenBottleManager.I.AddBottle(bottle);
         } else {
             _grabbedObjectRb.useGravity = true;
         }

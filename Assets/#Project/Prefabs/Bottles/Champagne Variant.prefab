@@ -114,6 +114,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1712943862192107719, guid: ac0ce98c8befcc84585a7d3e3a82a57b, type: 3}
+      propertyPath: price
+      value: 29.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712943862192107719, guid: ac0ce98c8befcc84585a7d3e3a82a57b, type: 3}
+      propertyPath: bottleName
+      value: Champagne
+      objectReference: {fileID: 0}
     - target: {fileID: 6752735254439394125, guid: ac0ce98c8befcc84585a7d3e3a82a57b, type: 3}
       propertyPath: m_Name
       value: Champagne Variant
