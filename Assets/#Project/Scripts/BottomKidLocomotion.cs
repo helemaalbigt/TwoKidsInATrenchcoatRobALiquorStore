@@ -16,11 +16,10 @@ public class BottomKidLocomotion : MonoBehaviour {
     public Transform head;
     public Camera camera;
     public Transform hand;
-
-    private bool _prevPosSet;
-    private Vector3 _prevPos;
-
-    private Vector2 currentRotation;
+    public MouseGrabber grabber;
+    
+    private Vector3 _targetHandPos;
+    private Vector2 _currentRotation;
     
     void FixedUpdate() {
         Move();
@@ -53,18 +52,24 @@ public class BottomKidLocomotion : MonoBehaviour {
     }
 
     private void Look() {
-        currentRotation.x += Input.GetAxis("Mouse X") * lookSensitivity;
-        currentRotation.y -= Input.GetAxis("Mouse Y") * lookSensitivity;
-        currentRotation.x = Mathf.Clamp(currentRotation.x, -maxXAngle, maxXAngle);
-        currentRotation.y = Mathf.Clamp(currentRotation.y, -maxYAngle, maxYAngle);
+        _currentRotation.x += Input.GetAxis("Mouse X") * lookSensitivity;
+        _currentRotation.y -= Input.GetAxis("Mouse Y") * lookSensitivity;
+        _currentRotation.x = Mathf.Clamp(_currentRotation.x, -maxXAngle, maxXAngle);
+        _currentRotation.y = Mathf.Clamp(_currentRotation.y, -maxYAngle, maxYAngle);
         
-        head.localRotation = Quaternion.Euler(currentRotation.y,currentRotation.x,0);
+        head.localRotation = Quaternion.Euler(_currentRotation.y,_currentRotation.x,0);
     }
 
     private void PositionHand() {
         var ray = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit, 2f, hittableHandLayers)) {
-            hand.position = hit.point;
+            if (grabber.grabbedObject != null) {
+                _targetHandPos = hit.point - ray.direction.normalized * 0.04f;
+            } else {
+                _targetHandPos = hit.point;
+            }
         }
+
+        hand.position = Vector3.Slerp(hand.position, _targetHandPos, Time.unscaledDeltaTime * 8f);
     }
 }

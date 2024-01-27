@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 8574507335386831796}
   - component: {fileID: 3283601339241495529}
   - component: {fileID: 5883253722759552684}
+  - component: {fileID: 815463699401336514}
   m_Layer: 6
   m_Name: BottlePlaceholder
   m_TagString: Untagged
@@ -257,3 +258,17 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &815463699401336514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4693325136075582792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e514469428243741a5e37b38008fffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbable: {fileID: 5883253722759552684}
+  collider: {fileID: 8574507335386831796}
