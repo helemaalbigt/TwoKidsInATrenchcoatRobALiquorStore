@@ -55,6 +55,8 @@ public class BottomHandController : MonoBehaviour
 
         if (_snapAnchor != null) {
             _targetHandPos = _snapAnchor.position;
+            _grabbedObject.position = _snapAnchor.position;
+            _grabbedObject.rotation = _snapAnchor.rotation;
         }
 
         hand.position = Vector3.Slerp(hand.position, _targetHandPos, Time.unscaledDeltaTime * 8f);
