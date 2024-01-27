@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2641145583656287121, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: -1069088155760131735, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -58,15 +62,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3815594533286374511, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3815594533286374511, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3815594533286374511, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3815594533286374511, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -74,15 +78,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7138820547799090374, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7138820547799090374, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7138820547799090374, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7138820547799090374, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -233,7 +237,6 @@ MonoBehaviour:
   TopKidHandTarget_L: {fileID: 0}
   BottomKidHandTarget_R: {fileID: 0}
   BottomKidHandTarget_L: {fileID: 0}
-  BottomKidHeadBone: {fileID: 8822672881169254998}
   TopKidHandIK_R: {fileID: 7064493844466143175}
   TopKidHandIK_L: {fileID: 8722992059909092488}
   BottomKidHandIK_R: {fileID: 2351327132904005334}
@@ -242,6 +245,8 @@ MonoBehaviour:
   HandOffset_L: {x: 0, y: -0.04, z: -0.12}
   HandRotOffset_R: {x: 0, y: 0, z: 0}
   HandRotOffset_L: {x: 0, y: 180, z: 0}
+  BottomKidHeadBone: {fileID: 8822672881169254998}
+  TopKidHeadBone: {fileID: 7712259426767783030}
 --- !u!95 &8288839342270867215
 Animator:
   serializedVersion: 5
@@ -286,6 +291,11 @@ MonoBehaviour:
   Iterations: 10
   Delta: 0.001
   SnapBackStrength: 1
+--- !u!4 &7712259426767783030 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4947766872542263174, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
+  m_PrefabInstance: {fileID: 5787533612698733580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8822672881169254998 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3035739602491688538, guid: 49e5b2a558d9cea40b72aaa73f1d5511, type: 3}
