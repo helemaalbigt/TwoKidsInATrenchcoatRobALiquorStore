@@ -80,13 +80,13 @@ public class GameManager : MonoBehaviour
                 break;
             }
 
-            //if (StaticGameData.stolenBottles.Count >= 4)
-            //{
-            //    OnPlayerWon.Invoke();
-            //    StartCoroutine(EndGame(true));
-            //    break;
-            //}
-            yield return null;
+			if (StolenBottleManager.I.GetBottleList().Count >= 4)
+			{
+				OnPlayerWon.Invoke();
+				StartCoroutine(EndGame(true));
+				break;
+			}
+			yield return null;
         }
     }
 
@@ -96,7 +96,11 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         StaticGameData.gotCaught = lose;
-        StaticGameData.stolenBottles = StolenBottleManager.I.GetBottleList();
+        StaticGameData.stolenBottles = new List<(string, float)>();
+        foreach (var bottle in StolenBottleManager.I.GetBottleList())
+        {
+            StaticGameData.stolenBottles.Add((bottle.bottleName, bottle.price));
+        }
 
         Debug.Log(" END GAME STATE : " + StaticGameData.gotCaught);
 	}
