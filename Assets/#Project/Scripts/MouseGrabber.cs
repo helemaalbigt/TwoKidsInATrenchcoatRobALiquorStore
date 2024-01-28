@@ -6,6 +6,7 @@ public class MouseGrabber : OVRGrabber
 
     public UnityEvent OnGrabStarted;
     public UnityEvent OnGrabEnded;
+    public UnityEvent OnGrabObjectStarted;
 
     public override void Update()
     {
@@ -27,6 +28,8 @@ public class MouseGrabber : OVRGrabber
         base.GrabBegin();
 
         OnGrabStarted.Invoke();
+        if (grabbedObject != null)
+            OnGrabObjectStarted.Invoke();
     }
 
     protected override void GrabVolumeEnable(bool enabled)

@@ -28,7 +28,7 @@ public class ShopKeeper : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
     [SerializeField]
-    private AudioClip ShopkeeperAlerted, ShopkeeperNoticedStealing;
+    private AudioClip[] ShopkeeperAlerted, ShopkeeperNoticedStealing;
 
     private void Start()
 	{
@@ -75,12 +75,12 @@ public class ShopKeeper : MonoBehaviour
         Transform BottleInAllertZone = GameManager.Instance.BottleInAllertZone;
         Transform BottleInCoatZone = GameManager.Instance.BottleInCoatZone;
         if (BottleInAllertZone != null && BottleInCoatZone != null)
-        {
-            audioSource.PlayOneShot(ShopkeeperNoticedStealing);
-            GameManager.Instance.PlayerLost = true;
-        }
+		{
+			audioSource.PlayOneShot(PickRandomSound(ShopkeeperNoticedStealing));
+			GameManager.Instance.PlayerLost = true;
+		}
 
-        if (BottleInAllertZone == null)
+		if (BottleInAllertZone == null)
 		{
 			EndAlertState();
 			return;
@@ -93,6 +93,11 @@ public class ShopKeeper : MonoBehaviour
 
         newRotation = Quaternion.LookRotation(BottleInAllertZone.position - headTransform.position);
         headTransform.rotation = Quaternion.Lerp(headTransform.rotation, newRotation, .05f);
+	}
+
+	private AudioClip PickRandomSound(AudioClip[] sound)
+	{
+		return sound[(int)(Random.value * sound.Length)];
 	}
 
 	private void EndAlertState()
@@ -129,6 +134,8 @@ public class ShopKeeper : MonoBehaviour
         alertedTimerStart = Time.unscaledTime;
         isAlerted = true;
 		OnAlerted.Invoke();
-	}
+
+        audioSource.PlayOneShot(PickRandomSound(ShopkeeperAlerted));
+    }
 
 }
