@@ -78,6 +78,10 @@ PrefabInstance:
       propertyPath: price
       value: 4.99
       objectReference: {fileID: 0}
+    - target: {fileID: 917229335252941534, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
+      propertyPath: bottleName
+      value: Wine
+      objectReference: {fileID: 0}
     - target: {fileID: 1112140807464128335, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.251
@@ -88,7 +92,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1112140807464128335, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.582
+      value: 3.4929998
       objectReference: {fileID: 0}
     - target: {fileID: 1112140807464128335, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
       propertyPath: m_LocalRotation.w
@@ -126,9 +130,34 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9004b6dba410dee419c882c3f46ec87a, type: 2}
+    - target: {fileID: 5711456475273852378, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
+      propertyPath: m_Size.x
+      value: 0.08715737
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711456475273852378, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
+      propertyPath: m_Size.y
+      value: 0.29958275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711456475273852378, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
+      propertyPath: m_Size.z
+      value: 0.096497774
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711456475273852378, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
+      propertyPath: m_Center.x
+      value: -0.00015598536
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711456475273852378, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
+      propertyPath: m_Center.y
+      value: 0.14909779
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711456475273852378, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
+      propertyPath: m_Center.z
+      value: -0.0023852587
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6230724682860452726, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
+    - {fileID: 258953152853293805, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1112140807464128335, guid: 140cf3b5bddb84c4fa3476fc044b4124, type: 3}
       insertIndex: -1

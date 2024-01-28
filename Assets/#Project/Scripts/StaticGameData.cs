@@ -4,5 +4,5 @@ using UnityEngine;
 
 public static class StaticGameData {
     public static bool gotCaught; 
-    public static List<Bottle> stolenBottles;
+    public static List<(string, float)> stolenBottles;
 }
