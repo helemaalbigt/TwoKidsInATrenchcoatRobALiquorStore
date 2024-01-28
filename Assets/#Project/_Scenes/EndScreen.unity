@@ -777,7 +777,7 @@ MonoBehaviour:
   winContinueWrapper: {fileID: 1967823667}
   prefab: {fileID: 8911161521444591317, guid: bb10ac4158117b74087ca938543ea6a8, type: 3}
   parent: {fileID: 1987183748}
-  debug: 1
+  debug: 0
 --- !u!1 &1378012780
 GameObject:
   m_ObjectHideFlags: 0
