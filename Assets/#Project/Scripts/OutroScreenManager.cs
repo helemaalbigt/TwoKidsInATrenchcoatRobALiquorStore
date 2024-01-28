@@ -10,6 +10,7 @@ public class OutroScreenManager : MonoBehaviour {
 
     public Text winText;
     public GameObject winContinueWrapper;
+    public AudioSource audioSource;
     
     public StolenItem prefab;
     public RectTransform parent;
@@ -45,16 +46,16 @@ public class OutroScreenManager : MonoBehaviour {
             winContinueWrapper.SetActive(false);
 
             var total = 0f;
-            foreach (var bottle in StaticGameData.stolenBottles) {
-                total += bottle.Item2;
-            }
 
-            winText.text = $"You got away with ${total.ToString("F2")} worth of alcohol!";
+            winText.text = $"You got away with $0.00 worth of alcohol!";
 
             foreach (var bottle in StaticGameData.stolenBottles) {
                 yield return new WaitForSeconds(1f);
                 var item = Instantiate(prefab, parent);
                 item.Show(bottle.Item1, bottle.Item2);
+                audioSource.Play();
+                total += bottle.Item2;
+                winText.text = $"You got away with ${total.ToString("F2")} worth of alcohol!";
             }
             yield return new WaitForSeconds(1f);
             
