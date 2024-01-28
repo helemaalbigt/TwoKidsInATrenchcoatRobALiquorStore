@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Shopkeeper : MonoBehaviour
+public class ShopKeeper : MonoBehaviour
 {
 
     public float detectionDistance = 10f; // Maximum distance to detect the target
