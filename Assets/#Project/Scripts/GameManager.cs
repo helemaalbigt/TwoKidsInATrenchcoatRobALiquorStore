@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
 
         while (true)
         {
+            Debug.Log("GameLoop");
             if (PlayerLost)
             {
                 OnPlayerLost.Invoke();

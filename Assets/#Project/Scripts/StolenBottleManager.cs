@@ -15,7 +15,7 @@ public class StolenBottleManager {
       }
    }
    
-   private List<Bottle> _stolenBottles;
+   private List<Bottle> _stolenBottles = new List<Bottle>();
 
    public void AddBottle(Bottle bottle) {
       if (_stolenBottles == null) {
