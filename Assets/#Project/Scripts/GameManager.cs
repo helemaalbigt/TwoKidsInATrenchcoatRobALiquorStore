@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -40,6 +42,14 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (StaticGameData.stolenBottles == null) {
+            StaticGameData.stolenBottles = new List<(string, float)>();
+        } else {
+            StaticGameData.stolenBottles.Clear();
+        }
+
+        StolenBottleManager.I.ClearBottleList();
+
         StartCoroutine(IntroLoop());
     }
 
@@ -77,14 +87,14 @@ public class GameManager : MonoBehaviour
             if (PlayerLost)
             {
                 OnPlayerLost.Invoke();
-                StartCoroutine(EndGame(false));
+                StartCoroutine(EndGame(true));
                 break;
             }
 
 			if (StolenBottleManager.I.GetBottleList().Count >= 4)
 			{
 				OnPlayerWon.Invoke();
-				StartCoroutine(EndGame(true));
+				StartCoroutine(EndGame(false));
 				break;
 			}
 			yield return null;
@@ -93,7 +103,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator EndGame(bool lose)
     {
-
+        //Debug.LogError(lose + " " + StolenBottleManager.I.GetBottleList().Count);
         yield return new WaitForSeconds(2);
 
         StaticGameData.gotCaught = lose;
@@ -103,8 +113,8 @@ public class GameManager : MonoBehaviour
             StaticGameData.stolenBottles.Add((bottle.bottleName, bottle.price));
         }
 
-        Debug.Log(" END GAME STATE : " + StaticGameData.gotCaught);
-	}
+        SceneManager.LoadScene(2);
+    }
 
 
 }

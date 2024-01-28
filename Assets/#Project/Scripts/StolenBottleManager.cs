@@ -32,4 +32,8 @@ public class StolenBottleManager {
    public List<Bottle> GetBottleList() {
       return _stolenBottles;
    }
+
+   public void ClearBottleList() {
+      _stolenBottles.Clear();
+   }
 }

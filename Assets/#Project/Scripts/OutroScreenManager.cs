@@ -49,7 +49,7 @@ public class OutroScreenManager : MonoBehaviour {
                 total += bottle.Item2;
             }
 
-            winText.text = $"You got away with ${total.ToString("F2")} worth of alcohol";
+            winText.text = $"You got away with ${total.ToString("F2")} worth of alcohol!";
 
             foreach (var bottle in StaticGameData.stolenBottles) {
                 yield return new WaitForSeconds(1f);
