@@ -44,4 +44,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b3bb03e65bbf44aa31ab9ee8d566f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartScreenActive: 0
+  GameActive: 0
+  EndScreenActive: 0
+  PlayerLost: 0
   BottleInAllertZone: {fileID: 0}
+  BottleInCoatZone: {fileID: 0}
+  OnPlayerLost:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerWon:
+    m_PersistentCalls:
+      m_Calls: []
+  BellAudioSource: {fileID: 0}
+  TopKidAudioSource: {fileID: 0}
+  BottomKidAudioSource: {fileID: 0}
+  BellSound: {fileID: 8300000, guid: 8ae8e31f18371744982a356d96b8db9d, type: 3}
+  KidsInstructions: {fileID: 0}
