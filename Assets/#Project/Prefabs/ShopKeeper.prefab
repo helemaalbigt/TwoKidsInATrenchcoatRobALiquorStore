@@ -88,8 +88,10 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   audioSource: {fileID: 2735180521145828720}
-  ShopkeeperAlerted: {fileID: 0}
-  ShopkeeperNoticedStealing: {fileID: 0}
+  ShopkeeperAlerted:
+  - {fileID: 0}
+  ShopkeeperNoticedStealing:
+  - {fileID: 0}
 --- !u!1001 &5535766905190813313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -170,7 +172,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
