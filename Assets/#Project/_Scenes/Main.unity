@@ -1041,14 +1041,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BottleTriggers
       objectReference: {fileID: 0}
-    - target: {fileID: 6477953309043501907, guid: a41bd8630364e7a4c8dde447a37bfa01, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7754849580757748643, guid: a41bd8630364e7a4c8dde447a37bfa01, type: 3}
-      propertyPath: m_Radius
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1301,6 +1293,10 @@ PrefabInstance:
       value: 4087
       objectReference: {fileID: 0}
     - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
       propertyPath: OnGrabEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 268271752}
@@ -1308,6 +1304,10 @@ PrefabInstance:
       propertyPath: OnGrabStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 268271752}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8321230493421764442, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9914449
@@ -1352,7 +1352,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
