@@ -115,7 +115,7 @@ namespace DitzelGames.FastIK
         {
             ResolveIK();
         }
-
+        public float stretchScale;
         private void ResolveIK()
         {
             if (Target == null)
@@ -137,11 +137,17 @@ namespace DitzelGames.FastIK
             var targetPosition = GetPositionRootSpace(Target);
             var targetRotation = GetRotationRootSpace(Target);
 
+            stretchScale = 1;
             //1st is possible to reach?
             if ((targetPosition - GetPositionRootSpace(Bones[0])).sqrMagnitude >= CompleteLength * CompleteLength)
             {
+
+                stretchScale = (targetPosition - GetPositionRootSpace(Bones[0])).sqrMagnitude / (CompleteLength * CompleteLength);
+                stretchScale = 1 + (stretchScale - 1) * .5f;
+
                 //just strech it
                 var direction = (targetPosition - Positions[0]).normalized;
+                
                 //set everything after root
                 for (int i = 1; i < Positions.Length; i++)
                     Positions[i] = Positions[i - 1] + direction * BonesLength[i - 1];
@@ -211,7 +217,7 @@ namespace DitzelGames.FastIK
             if (Root == null)
                 current.position = position;
             else
-                current.position = Root.rotation * position + Root.position;
+                current.position = Root.rotation * position * stretchScale + Root.position;
         }
 
         private Quaternion GetRotationRootSpace(Transform current)

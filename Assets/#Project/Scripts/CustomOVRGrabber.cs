@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class CustomOVRGrabber : OVRGrabber
 {
     public UnityEvent OnGrabStarted;
+    public UnityEvent OnGrabObjectStarted;
     public UnityEvent OnGrabEnded;
 
     protected override void GrabBegin()
@@ -13,6 +14,8 @@ public class CustomOVRGrabber : OVRGrabber
         base.GrabBegin();
 
         OnGrabStarted.Invoke();
+        if(grabbedObject != null)
+            OnGrabObjectStarted.Invoke();
     }
 
     protected override void GrabVolumeEnable(bool enabled)
