@@ -14,7 +14,6 @@ public class ShopKeeper : MonoBehaviour
     private float timerStart;
     Quaternion newRotation;
 
-    bool isAlerted;
     private float alertedTimerStart;
 
     public Transform headTransform;
@@ -28,17 +27,18 @@ public class ShopKeeper : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
     [SerializeField]
-    private AudioClip[] ShopkeeperAlerted, ShopkeeperNoticedStealing;
+    private AudioClip[] ShopkeeperAlerted, ShopkeeperNoticedStealing, ShopkeeperCommentOnBottle;
 
     private void Start()
 	{
         // start 
         //EndAlertState();
+        GameManager.Instance.OnPlayerGrabbedBottle.AddListener(CommentOnGrab);
     }
 
 	private void Update()
 	{
-        if (isAlerted)
+        if (GameManager.Instance.ShopKeeperAlerted)
 		{
             LookAtBottleInAllertZone();
         }
@@ -102,7 +102,7 @@ public class ShopKeeper : MonoBehaviour
 
 	private void EndAlertState()
 	{
-        isAlerted = false;
+        GameManager.Instance.ShopKeeperAlerted = false;
 		OnAlertedEnded.Invoke();
 	}
 
@@ -132,9 +132,14 @@ public class ShopKeeper : MonoBehaviour
 	private void StartAlertedState()
 	{
         alertedTimerStart = Time.unscaledTime;
-        isAlerted = true;
+        GameManager.Instance.ShopKeeperAlerted = true;
 		OnAlerted.Invoke();
 
+        audioSource.PlayOneShot(PickRandomSound(ShopkeeperAlerted));
+    }
+    
+	private void CommentOnGrab()
+	{
         audioSource.PlayOneShot(PickRandomSound(ShopkeeperAlerted));
     }
 

@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool EndScreenActive;
 
     public bool PlayerLost;
+    public bool ShopKeeperAlerted;
 
     public Transform BottleInAllertZone;
     public Transform BottleInCoatZone;
@@ -20,10 +21,11 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent OnPlayerLost;
     public UnityEvent OnPlayerWon;
+    public UnityEvent OnPlayerGrabbedBottle;
 
 
-    public AudioSource BellAudioSource, TopKidAudioSource, BottomKidAudioSource;
-    public AudioClip BellSound, KidsInstructions;
+    public AudioSource BellAudioSource, TopKidAudioSource, BottomKidAudioSource, ShopKeeperAudioSource;
+    public AudioClip BellSound, KidsInstructions, ShopKeeperIntro;
 
     public static GameManager Instance { get; private set; }
 
@@ -53,17 +55,29 @@ public class GameManager : MonoBehaviour
         StartCoroutine(IntroLoop());
     }
 
+    public void PlayerGrabbedBottle()
+	{
+        OnPlayerGrabbedBottle.Invoke();
+    }
+    
+    public void OnBottomPlayerGrabbedBottle()
+	{
+        if (ShopKeeperAlerted)
+            PlayerLost = true;
+    }
+
     IEnumerator IntroLoop()
 	{
         yield return null;
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         BellAudioSource.PlayOneShot(BellSound);
         
         while(BellAudioSource.isPlaying)
             yield return null;
 
         yield return new WaitForSeconds(2);
+        ShopKeeperAudioSource.PlayOneShot(ShopKeeperIntro);
         BottomKidAudioSource.PlayOneShot(KidsInstructions);
 
         while (BellAudioSource.isPlaying)

@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &210304669 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8819116242474669653, guid: de9999541726d0947849652854691682, type: 3}
+  m_PrefabInstance: {fileID: 1209615447}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b3bb03e65bbf44aa31ab9ee8d566f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &238367334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8321230493421764442, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
@@ -760,6 +771,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperAlerted.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
       propertyPath: pointsOfInterest.Array.data[0]
       value: 
       objectReference: {fileID: 717080171}
@@ -783,6 +798,30 @@ PrefabInstance:
       propertyPath: pointsOfInterest.Array.data[5]
       value: 
       objectReference: {fileID: 618812335}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperAlerted.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8fe6a3fd855b73242957f776a831740b, type: 3}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperAlerted.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: d5a558cb7b4185843b12919a726f019d, type: 3}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperAlerted.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: fce44f2ad59c42b49acff613ba875615, type: 3}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperNoticedStealing.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperNoticedStealing.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26eaf3e22e87d0a4baf3baf1b340403e, type: 3}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperNoticedStealing.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 74873acfe03bdf146b31e1023ac29ba0, type: 3}
     - target: {fileID: 5055675676260544247, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.36
@@ -844,6 +883,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+--- !u!82 &1025542274 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8306024301875321619, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+  m_PrefabInstance: {fileID: 2713191075861342736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1043062791 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7048092788740501785, guid: ce82c0c374f0f824e8516e73b5522a69, type: 3}
@@ -1166,6 +1210,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
       propertyPath: OnGrabEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 268271752}
@@ -1173,6 +1221,34 @@ PrefabInstance:
       propertyPath: OnGrabStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 268271752}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 210304669}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayerGrabbedBottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 964184474648726222, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1637791447961727811, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
       propertyPath: m_Name
       value: TopKid
@@ -1218,6 +1294,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
       propertyPath: OnGrabEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 268271752}
@@ -1225,6 +1305,34 @@ PrefabInstance:
       propertyPath: OnGrabStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 268271752}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 210304669}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayerGrabbedBottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262313846456792680, guid: 38a76985c17f99a4386cfa1f013a1721, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1294,7 +1402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
       propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
       propertyPath: OnGrabEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1305,8 +1413,60 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 268271752}
     - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 210304669}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1025542274}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
       propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBottomPlayerGrabbedBottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 87d38d3e31966b64cb2254f08b44efd8, type: 3}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950462158135915983, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
+      propertyPath: OnGrabObjectStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8321230493421764442, guid: a1587c37223e18d499c58981d7fdbc23, type: 3}
       propertyPath: m_LocalRotation.w
