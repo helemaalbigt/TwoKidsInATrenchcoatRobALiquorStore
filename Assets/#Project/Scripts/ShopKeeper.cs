@@ -75,8 +75,9 @@ public class ShopKeeper : MonoBehaviour
         Transform BottleInAllertZone = GameManager.Instance.BottleInAllertZone;
         Transform BottleInCoatZone = GameManager.Instance.BottleInCoatZone;
         if (BottleInAllertZone != null && BottleInCoatZone != null)
-		{
-			audioSource.PlayOneShot(PickRandomSound(ShopkeeperNoticedStealing));
+        {
+            if (!audioSource.isPlaying)
+                audioSource.PlayOneShot(PickRandomSound(ShopkeeperNoticedStealing));
 			GameManager.Instance.PlayerLost = true;
 		}
 
@@ -110,6 +111,7 @@ public class ShopKeeper : MonoBehaviour
     {
         Transform BottleInAllertZone =  GameManager.Instance.BottleInAllertZone;
         if (BottleInAllertZone == null) return;
+        if (GameManager.Instance.ShopKeeperAlerted) return;
 
         Vector3 directionToTarget = BottleInAllertZone.position - headTransform.position;
         float angleToTarget = Vector3.Angle(headTransform.forward, directionToTarget);
@@ -135,12 +137,14 @@ public class ShopKeeper : MonoBehaviour
         GameManager.Instance.ShopKeeperAlerted = true;
 		OnAlerted.Invoke();
 
-        audioSource.PlayOneShot(PickRandomSound(ShopkeeperAlerted));
+        if (!audioSource.isPlaying)
+            audioSource.PlayOneShot(PickRandomSound(ShopkeeperAlerted));
     }
     
 	private void CommentOnGrab()
-	{
-        audioSource.PlayOneShot(PickRandomSound(ShopkeeperAlerted));
+    {
+        if (!audioSource.isPlaying)
+            audioSource.PlayOneShot(PickRandomSound(ShopkeeperCommentOnBottle));
     }
 
 }

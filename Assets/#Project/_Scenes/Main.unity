@@ -811,9 +811,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: fce44f2ad59c42b49acff613ba875615, type: 3}
     - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperCommentOnBottle.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
       propertyPath: ShopkeeperNoticedStealing.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperCommentOnBottle.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: fd2a533fdd94ebd48a487bd2a1055758, type: 3}
+    - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+      propertyPath: ShopkeeperCommentOnBottle.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 059fc053ce3a38742bcad5f2a3c886c4, type: 3}
     - target: {fileID: 4295559353705091815, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
       propertyPath: ShopkeeperNoticedStealing.Array.data[0]
       value: 
@@ -1016,6 +1028,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 636257150}
     - target: {fileID: 8819116242474669653, guid: de9999541726d0947849652854691682, type: 3}
+      propertyPath: ShopKeeperIntro
+      value: 
+      objectReference: {fileID: 8300000, guid: 3398fec1facc5ed4ca7851af9069f33c, type: 3}
+    - target: {fileID: 8819116242474669653, guid: de9999541726d0947849652854691682, type: 3}
       propertyPath: TopKidAudioSource
       value: 
       objectReference: {fileID: 1870787425211503346}
@@ -1023,6 +1039,10 @@ PrefabInstance:
       propertyPath: BottomKidAudioSource
       value: 
       objectReference: {fileID: 2713191075861342738}
+    - target: {fileID: 8819116242474669653, guid: de9999541726d0947849652854691682, type: 3}
+      propertyPath: ShopKeeperAudioSource
+      value: 
+      objectReference: {fileID: 1269036620}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1032,6 +1052,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3432290023168418680, guid: ce82c0c374f0f824e8516e73b5522a69, type: 3}
   m_PrefabInstance: {fileID: 901902440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1269036620 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2735180521145828720, guid: 12425d4668c31024fbb54916d63dd7e7, type: 3}
+  m_PrefabInstance: {fileID: 965161636}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1353946830
 PrefabInstance:
