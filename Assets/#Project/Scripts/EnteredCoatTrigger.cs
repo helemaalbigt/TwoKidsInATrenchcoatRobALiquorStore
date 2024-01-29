@@ -5,13 +5,19 @@ using UnityEngine;
 public class EnteredCoatTrigger : MonoBehaviour
 {
     List<GameObject> ObjectsInTrigger = new List<GameObject>();
+	private GameManager gameManager;
 
-    private void OnTriggerEnter(Collider other)
+	private void Awake()
+	{
+
+        gameManager = FindObjectOfType<GameManager>();
+    }
+	private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<OVRGrabbable>() != null)
         {
             ObjectsInTrigger.Add(other.gameObject);
-            GameManager.Instance.BottleInCoatZone = other.transform;
+            gameManager.BottleInCoatZone = other.transform;
         }
     }
 
@@ -23,7 +29,7 @@ public class EnteredCoatTrigger : MonoBehaviour
                 ObjectsInTrigger.Remove(other.gameObject);
             if (ObjectsInTrigger.Count == 0)
             {
-                GameManager.Instance.BottleInCoatZone = null;
+                gameManager.BottleInCoatZone = null;
             }
         }
     }

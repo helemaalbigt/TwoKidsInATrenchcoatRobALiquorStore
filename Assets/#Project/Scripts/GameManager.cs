@@ -8,10 +8,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    public bool StartScreenActive;
-    public bool GameActive;
-    public bool EndScreenActive;
-
     public bool PlayerLost;
     public bool ShopKeeperAlerted;
 
@@ -27,22 +23,8 @@ public class GameManager : MonoBehaviour
     public AudioSource BellAudioSource, TopKidAudioSource, BottomKidAudioSource, ShopKeeperAudioSource;
     public AudioClip BellSound, KidsInstructions, ShopKeeperIntro;
 
-    public static GameManager Instance { get; private set; }
-
     private void Awake()
     {
-        StartScreenActive = true;
-
-        // Singleton pattern
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
 
         if (StaticGameData.stolenBottles == null) {
             StaticGameData.stolenBottles = new List<(string, float)>();
@@ -51,7 +33,8 @@ public class GameManager : MonoBehaviour
         }
 
         StolenBottleManager.I.ClearBottleList();
-
+        PlayerLost = false;
+        Debug.Log("AWAKE");
         StartCoroutine(IntroLoop());
     }
 
@@ -98,6 +81,11 @@ public class GameManager : MonoBehaviour
         while (true)
         {
             Debug.Log("GameLoop");
+
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+                StartCoroutine(EndGame(false));
+            }
             if (PlayerLost)
             {
                 OnPlayerLost.Invoke();

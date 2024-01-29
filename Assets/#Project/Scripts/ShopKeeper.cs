@@ -29,16 +29,20 @@ public class ShopKeeper : MonoBehaviour
     [SerializeField]
     private AudioClip[] ShopkeeperAlerted, ShopkeeperNoticedStealing, ShopkeeperCommentOnBottle;
 
-    private void Start()
-	{
+    private GameManager gameManager;
+
+    private void Awake()
+    {
+
+        gameManager = FindObjectOfType<GameManager>();
         // start 
         //EndAlertState();
-        GameManager.Instance.OnPlayerGrabbedBottle.AddListener(CommentOnGrab);
+        gameManager.OnPlayerGrabbedBottle.AddListener(CommentOnGrab);
     }
 
 	private void Update()
 	{
-        if (GameManager.Instance.ShopKeeperAlerted)
+        if (gameManager.ShopKeeperAlerted)
 		{
             LookAtBottleInAllertZone();
         }
@@ -72,13 +76,13 @@ public class ShopKeeper : MonoBehaviour
 
     private void LookAtBottleInAllertZone()
     {
-        Transform BottleInAllertZone = GameManager.Instance.BottleInAllertZone;
-        Transform BottleInCoatZone = GameManager.Instance.BottleInCoatZone;
+        Transform BottleInAllertZone = gameManager.BottleInAllertZone;
+        Transform BottleInCoatZone = gameManager.BottleInCoatZone;
         if (BottleInAllertZone != null && BottleInCoatZone != null)
         {
             if (!audioSource.isPlaying)
                 audioSource.PlayOneShot(PickRandomSound(ShopkeeperNoticedStealing));
-			GameManager.Instance.PlayerLost = true;
+            gameManager.PlayerLost = true;
 		}
 
 		if (BottleInAllertZone == null)
@@ -93,7 +97,7 @@ public class ShopKeeper : MonoBehaviour
         }
 
         newRotation = Quaternion.LookRotation(BottleInAllertZone.position - headTransform.position);
-        headTransform.rotation = Quaternion.Lerp(headTransform.rotation, newRotation, .05f);
+        headTransform.rotation = Quaternion.Lerp(headTransform.rotation, newRotation, .03f);
 	}
 
 	private AudioClip PickRandomSound(AudioClip[] sound)
@@ -103,15 +107,15 @@ public class ShopKeeper : MonoBehaviour
 
 	private void EndAlertState()
 	{
-        GameManager.Instance.ShopKeeperAlerted = false;
+        gameManager.ShopKeeperAlerted = false;
 		OnAlertedEnded.Invoke();
 	}
 
 	void DetectTarget()
     {
-        Transform BottleInAllertZone =  GameManager.Instance.BottleInAllertZone;
+        Transform BottleInAllertZone = gameManager.BottleInAllertZone;
         if (BottleInAllertZone == null) return;
-        if (GameManager.Instance.ShopKeeperAlerted) return;
+        if (gameManager.ShopKeeperAlerted) return;
 
         Vector3 directionToTarget = BottleInAllertZone.position - headTransform.position;
         float angleToTarget = Vector3.Angle(headTransform.forward, directionToTarget);
@@ -134,7 +138,7 @@ public class ShopKeeper : MonoBehaviour
 	private void StartAlertedState()
 	{
         alertedTimerStart = Time.unscaledTime;
-        GameManager.Instance.ShopKeeperAlerted = true;
+        gameManager.ShopKeeperAlerted = true;
 		OnAlerted.Invoke();
 
         if (!audioSource.isPlaying)

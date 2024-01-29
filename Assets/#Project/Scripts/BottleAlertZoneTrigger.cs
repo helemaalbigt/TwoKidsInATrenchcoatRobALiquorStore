@@ -6,13 +6,18 @@ public class BottleAlertZoneTrigger : MonoBehaviour
 {
 
     List<GameObject> ObjectsInTrigger = new List<GameObject>();
+    GameManager gameManager;
+    private void Awake()
+	{
+        gameManager = FindObjectOfType<GameManager>();
 
+    }
 	private void OnTriggerEnter(Collider other)
 	{
         if(other.gameObject.GetComponent<OVRGrabbable>() != null)
 		{
             ObjectsInTrigger.Add(other.gameObject);
-            GameManager.Instance.BottleInAllertZone = other.transform;
+            gameManager.BottleInAllertZone = other.transform;
         }
     }
 
@@ -24,7 +29,7 @@ public class BottleAlertZoneTrigger : MonoBehaviour
                 ObjectsInTrigger.Remove(other.gameObject);
             if(ObjectsInTrigger.Count == 0)
 			{
-                GameManager.Instance.BottleInAllertZone = null;
+                gameManager.BottleInAllertZone = null;
             }
         }
     }
